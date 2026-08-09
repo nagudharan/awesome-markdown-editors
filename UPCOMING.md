@@ -9,6 +9,16 @@ for Linux, Apple OS X, Microsoft Windows, the World Wide Web and more.
 
 ## Markdown Online Editors
 
+**Bangle.io**
+(web: [`app.bangle.io`](https://app.bangle.io/), open source @ github [`bangle-io/bangle-io`](https://github.com/bangle-io/bangle-io)) -
+A simple yet powerful Markdown-based note-taking app with WYSIWYG editing and local-first storage.
+
+
+**markupmarkdown**
+(web: [`mumd.metavert.io`](https://mumd.metavert.io), open source @ github [`jonradoff/markupmarkdown`](https://github.com/jonradoff/markupmarkdown)) -
+"Google Docs for Markdown" — collaborative editor and review tool for Markdown files: anchored comment threads on any text selection, suggested changes with one-click apply, review states (approve / request changes), document checks, and GitHub round-trip (open any repo's `.md`, edit, push back as a PR). Includes an MCP server so AI agents can comment, suggest, and review through the same loop as humans. MIT licensed, built with Go + React.
+
+
 **MDXG Redline**
 (web: [`mkdn.review`](https://mkdn.review/?url=https%3A%2F%2Fraw.githubusercontent.com%2Foubakiou%2Fmdxg-redline%2Frefs%2Fheads%2Fmain%2FREADME.md), open source @ github [`oubakiou/mdxg-redline`](https://github.com/oubakiou/mdxg-redline)) -
 Read-only Markdown (pre)viewer with inline review comments, distributed as a single standalone HTML file (also runnable via `npx mdxg-redline`). Implements the MDXG Viewer profile: Word/Pages-style stacked virtual pages, page navigation and outline, in-document search, and left-hand WASD keyboard navigation. Renders Shiki syntax highlighting (~235 languages), Mermaid diagrams, KaTeX math, and GitHub Flavored Markdown footnotes, with smartphone support. Select any text range to leave a comment; comments export as structured JSON keyed by headingPath and sourceLine, so an LLM agent can apply each one back to the exact lines. The standalone/CLI build makes no network requests (CSP connect-src 'none'); an optional online edition at mkdn.review fetches Markdown from an allowlisted public raw URL via a `?url=` parameter. MIT licensed.
@@ -16,6 +26,17 @@ Read-only Markdown (pre)viewer with inline review comments, distributed as a sin
 
 
 ## Markdown Desktop Editors
+
+### Editor Plugins
+
+**Markdown Table Editor**
+(web: [`markdowntableeditor.krot.name`](https://markdowntableeditor.krot.name/),
+ JetBrains Marketplace: [`Markdown Table Editor`](https://plugins.jetbrains.com/plugin/32159-markdown-table-editor),
+ open source @ github [`krotname/IdeaMarkdownTableEditor`](https://github.com/krotname/IdeaMarkdownTableEditor),
+ [`krotname/NppMarkdownTableEditor`](https://github.com/krotname/NppMarkdownTableEditor)) -
+Open-source plugins for editing Markdown pipe tables inside JetBrains IDEs and Notepad++.
+Features include table alignment, row and column operations, sorting, width fitting, CSV/TSV conversion,
+escaped pipe handling, Unicode/CJK width support, release ZIPs, tests, and CI.
 
 ### Universal
 
@@ -47,6 +68,10 @@ Ultra-lightweight cross-platform Markdown preview app built with Rust and the sy
 (web: [`noteriv.com`](https://www.noteriv.com), open source @ github [`thejacedev/Noteriv`](https://github.com/thejacedev/Noteriv)) -
 Local-first Markdown note-taking app built with Tauri 2 (Rust + Next.js). Organizes `.md` files into vaults with wiki-links, backlinks, a force-directed graph view, kanban board, daily notes, full-text search, KaTeX math, Mermaid diagrams, and a `[TOC]` widget. Extensible via a plugin API and custom CSS themes, with Git and WebDAV sync. Cross-platform (Linux, macOS, Windows), MIT licensed.
 
+**PinkDown**
+(web: [`3xian.github.io/PinkDown`](https://3xian.github.io/PinkDown/), open source @ github [`3xian/PinkDown`](https://github.com/3xian/PinkDown)) -
+Fast native split-pane Markdown editor and reader for Windows and macOS, built in Rust with egui. Features live preview, UTF-8 and UTF-16 decoding, drag-and-drop file opening, system font selection, and checksum-verified in-app updates. MIT licensed.
+
 
 ### Linux
 
@@ -56,6 +81,20 @@ Minimal frameless notepad for Linux built with Tauri 2 (Rust + TypeScript). Feat
 
 
 ### Microsoft Windows
+
+**MannyMarker**  
+(open source @ github [`PaulCoughlin/mannymarker`](https://github.com/PaulCoughlin/mannymarker)  
+A small, fast, portable standalone native Windows markdown editor. You edit a rendered view - headings look like headings, bold looks bold - but the file on disk is always plain .md. No server, no browser tab, no terminal. Deliberately kept minimal: open, edit, save.  
+Tauri 2, Edge WebView2, TipTap, Vite + vanilla TypeScript.
+
+
+**Markdown Studio**
+(open source @ github [`Financialnews-ops/markdown-studio-by-htny`](https://github.com/Financialnews-ops/markdown-studio-by-htny)) -
+Desktop Markdown editor for Windows with live preview and independently toggleable editor/preview panes. Built with Electron, parsing via marked and HTML sanitized with DOMPurify. Includes a formatting toolbar (headings, bold, italic, strikethrough, inline code, quotes, ordered/unordered lists, links, images, tables) and one-click export to PDF, DOCX (Word), and Obsidian-flavored Markdown, plus PDF text import. Fully offline — documents stay in a local `Documents/MarkdownStudio` folder. Ships an NSIS installer via signed-tag GitHub Releases. MIT licensed.
+
+**Tinta**
+(web: [`tinta.cc`](https://tinta.cc), open source @ github [`oipoistar/tinta`](https://github.com/oipoistar/tinta)) -
+Fast, lightweight Markdown viewer and reader for Windows built with native C++ and Direct2D/DirectWrite for hardware-accelerated text rendering -- a single portable exe under 1 MB that cold-starts in ~200 ms, no Electron, no bundled browser, no installer. Designed as the double-click default for `.md` files: 10 themes (5 light, 5 dark incl. an OLED-friendly pure black), table of contents, folder browser, full-text search, rich tables, text selection, Ctrl+scroll zoom, drag & drop, and an edit mode with live preview. Installable via Scoop. MIT licensed.
 
 
 ### Apple Mac OS X
@@ -81,12 +120,33 @@ Local-first macOS Markdown editor built with Tauri 2 (Rust + React 19) for organ
 (open source @ github [`oratis/Markup`](https://github.com/oratis/Markup)) -
 Reader-first native macOS Markdown editor built with Tauri 2 (Rust + system WebView, ~88 MB RAM). Renders your `.md` like a clean web page and you edit on demand — WYSIWYG via Milkdown, or raw source. Includes a vault with wikilinks, backlinks and a graph view, Tantivy full-text search (a 10k-file vault indexes in ~1s), KaTeX math, Mermaid diagrams, three themes (light/dark/sepia), and one-click MD→HTML export (a clean, self-contained page). MIT licensed.
 
+**Edmund**
+(open source @ github [`I7T5/Edmund`](https://github.com/I7T5/Edmund)) -
+Minimal, native macOS Markdown editor with live preview — built with AppKit + TextKit 2 (~15 MB), not Electron or a webview. Works directly with your existing `.md` files: no vault, no enforced folder structure. Renders as you type, hiding syntax delimiters outside the active block. Supports GitHub Flavored Markdown plus opt-in highlights, `[[wikilinks]]`, footnotes, Obsidian-style callouts and comments, and inline/display math via SwiftMath. Keyboard-first, fully offline, auto-updating via Sparkle, Apache 2.0 licensed.
+
+**Knopo**
+(open source @ github [`alkalim/Knopo`](https://github.com/alkalim/Knopo)) -
+Open-source local-first Markdown outliner for macOS. Knopo stores notes as ordinary `.md` files while adding block trees, page and block references, embeds, queries, backlinks, daily notes, and full-text search. Built with Swift, AppKit, and SwiftUI; AGPL-3.0 licensed.
+
+**OpenMarkdown**
+(web: [`openmarkdown.dev`](https://openmarkdown.dev)) -
+Fast, local-first Markdown editor for macOS, built with Rust and Tauri (not Electron). Plain `.md` files on disk — no account, no telemetry, no lock-in. Ships an MCP server so your coding agent can open a file and rewrite one section at a time in place, keeping your cursor and scroll put, so you and your agent write in the same file without stepping on each other. Universal binary, signed and notarized; free.
+
 
 ## Markdown Mobile Editors
 
 ### Android
 
 ### Apple iOS/iPhone
+
+
+## Misc
+
+**MDPR**
+(open source @ github [`ch040602/MdPr`](https://github.com/ch040602/MdPr),
+ npm: [`@mdpresent/cli`](https://www.npmjs.com/package/@mdpresent/cli),
+ optional Codex skill @ github [`ch040602/mdpr-skill`](https://github.com/ch040602/mdpr-skill)) -
+Open-source Markdown presentation renderer/exporter for turning `.md` decks into editable PPTX, HTML, PDF, previews, and visual review artifacts. Supports themes, layout hints, charts, tables, diagrams, icon search, and deterministic rendering without requiring an LLM; the optional `mdpr-skill` repository adds Codex-assisted semantic hints and visual review reports.
 
 
 ## Meta
