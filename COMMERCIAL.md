@@ -6,7 +6,8 @@ no matter if the basic usage is free or you only have ads or such.
 
 
 ## Markdown Online Editors
-
+**Markdown Tools Online**
+(web: [`Markdown Tools Online`](https://markdowntoolsonline.com) - Free online Markdown editor with live preview, syntax highlighting, and GFM support. Browser-based, no installation required.
 
 **Markdown Writer**
 (web: [`markdownwriter.com`](https://markdownwriter.com)) - Free online markdown editor with live preview. Write GitHub-flavored markdown with syntax highlighting, KaTeX math, Mermaid diagrams, and PDF export, right in your browser.
@@ -47,5 +48,31 @@ Native macOS Markdown viewer and editor built with Tauri 2 (Rust + TypeScript). 
 (web: [`slatemd.app`](https://www.slatemd.app), download @ github [`SlateMD`](https://github.com/Slatemd-App/slate-releases)) - 
 Super clean, focused, native macOS Markdown editor. Think in markdown. Reason with AI. Start with a folder of markdown files. Over time, AI turns it into a knowledge base that thinks with you. Slate keeps the structure intact. So when you bring AI into the loop, it actually understands what you wrote. Not just the words, but the shape of your thinking.
 
+### Converters
+
+- [Markdown to PDF](https://markdowntoolsonline.com/markdown-to-pdf) - Convert Markdown to PDF with clean formatting
+- [Markdown to DOCX](https://markdowntoolsonline.com/markdown-to-docx) - Convert Markdown to Word documents
+- [Markdown to HTML](https://markdowntoolsonline.com/markdown-to-html) - Convert Markdown to HTML
+- [Markdown to Slides](https://markdowntoolsonline.com/markdown-to-slides) - Convert Markdown to presentation slides
+- [Markdown to Image](https://markdowntoolsonline.com/markdown-to-image) - Convert Markdown to PNG images
+- [PDF to Markdown](https://markdowntoolsonline.com/pdf-to-markdown) - Extract text from PDF as Markdown
+- [DOCX to Markdown](https://markdowntoolsonline.com/docx-to-markdown) - Convert Word documents to Markdown
+- [HTML to Markdown](https://markdowntoolsonline.com/html-to-markdown) - Convert HTML to Markdown
+- [URL to Markdown](https://markdowntoolsonline.com/url-to-markdown) - Extract content from web pages as Markdown
+
+### Tables
+
+- [Markdown Table Generator](https://markdowntoolsonline.com/markdown-table-generator) - Create Markdown tables with live preview
+- [CSV to Markdown Table](https://markdowntoolsonline.com/csv-to-markdown-table) - Convert CSV to Markdown tables
+- [Excel to Markdown Table](https://markdowntoolsonline.com/excel-to-markdown) - Convert Excel files to Markdown tables
+
+### Utilities
+
+- [Markdown Diff](https://markdowntoolsonline.com/markdown-diff) - Compare two Markdown files with visual diff
+- [Image to Markdown (OCR)](https://markdowntoolsonline.com/image-to-markdown) - Extract text from images using OCR
+
+### AI Integration
+
+- [Convert AI Output to Markdown](https://markdowntoolsonline.com/blog/convert-ai-output-to-markdown) - Guide for converting ChatGPT/Claude/Gemini output to clean Markdown
 
 
